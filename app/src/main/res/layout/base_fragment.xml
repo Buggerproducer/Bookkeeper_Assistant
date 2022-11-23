@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/fragment_header"
+        android:padding="12dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/other"
+            android:id="@+id/fragment_header_typeImage"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_header_typeName"
+            android:textStyle="bold"
+            android:text="other"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/fragment_header_typeImage"
+            android:layout_marginLeft="12dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_money_input"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:inputType="numberDecimal"
+            android:background="@color/white"/>
+    </RelativeLayout>
+    <ImageView
+    android:layout_width="500dp"
+    android:layout_below="@id/fragment_header"
+    android:layout_height="50dp"
+    android:src="@mipmap/border"
+    android:id="@+id/frag_record_ig_border"/>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frag_record_ig_border"
+        android:id="@+id/fragment_typeList"
+        android:numColumns="5"
+        android:paddingTop="7dp"
+        android:paddingBottom="5dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/fragment_typeList"
+        android:src="@mipmap/money" />
+
+    <!--customized keyboard-->
+    <android.inputmethodservice.KeyboardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_keyboard"
+        android:keyBackground="@color/grey"
+        android:keyTextColor="@color/black"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentBottom="true"
+        android:shadowColor="@color/white"
+        android:shadowRadius="0.0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_information"
+        android:layout_above="@id/fragment_keyboard"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_dateTime"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:id="@+id/fragment_notes"
+            android:text="add some notes"
+            android:layout_toLeftOf="@id/fragment_dateTime"
+            android:padding="10dp"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

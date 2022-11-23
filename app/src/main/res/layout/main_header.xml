@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:background="@mipmap/bill"
+        android:padding="20dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/header_expense_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month_expense"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/header_expense_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_expense_label"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="$0"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/header_eye"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/header_expense_number"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/eye" />
+
+        <TextView
+            android:id="@+id/header_income_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@+id/header_expense_number"
+            android:text="@string/month_income" />
+
+        <TextView
+            android:id="@+id/header_income_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_expense_number"
+            android:layout_alignBottom="@id/header_income_label"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/header_income_label"
+            android:text="$0"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/header_budget_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/header_income_label"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:text="$0"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/header_budget_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/header_budget_number"
+            android:layout_toLeftOf="@+id/header_budget_number"
+            android:textSize="20sp"
+            android:text="@string/budget" />
+
+        <TextView
+            android:id="@+id/header_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_expense_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@mipmap/history"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            android:text="@string/check_charts"
+            android:textColor="@color/orange" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_today_total"
+        android:text="Today Expense: $0 Income: $0"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"/>
+
+
+</LinearLayout>

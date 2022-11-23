@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/budget_title"
+        android:text="@string/set_budget"
+        android:layout_centerHorizontal="true"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/budget_back"
+        android:src="@mipmap/backspace"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/budget_money_symbol"
+        android:text="$"
+        android:layout_below="@id/budget_title"
+        android:textSize="23sp"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/dark_grey"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/budget_input"
+        android:layout_toRightOf="@id/budget_money_symbol"
+        android:layout_alignBaseline="@id/budget_money_symbol"
+        android:background="@color/grey"
+        android:inputType="numberDecimal">
+        <requestFocus/>
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/budget_done"
+        android:text="@string/done"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/budget_input"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/record_btn"/>
+
+
+</RelativeLayout>

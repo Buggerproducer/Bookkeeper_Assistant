@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/more_btn"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="-30dp"
+            android:paddingTop="20dp"
+            android:text="User"
+            android:drawableTop="@mipmap/user"
+            android:id="@+id/setting_user"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/more_btn"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="-30dp"
+            android:paddingTop="20dp"
+            android:layout_toRightOf="@+id/setting_user"
+            android:text="@string/setting"
+            android:drawableTop="@mipmap/setting_activate"
+            android:id="@+id/more_setting"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/more_btn"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="-30dp"
+            android:paddingTop="20dp"
+            android:layout_toRightOf="@+id/more_setting"
+            android:text="Logout"
+            android:drawableTop="@mipmap/mylogout"
+            android:id="@+id/setting_logout"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

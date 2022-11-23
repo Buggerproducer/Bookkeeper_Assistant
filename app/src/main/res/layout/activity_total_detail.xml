@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background1"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_header"
+        android:padding="5dp"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/backspace"
+            android:id="@+id/total_back"/>
+
+
+        <TextView
+            android:id="@+id/total_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="23sp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/alchol_activate"
+            android:layout_toLeftOf="@+id/total_text"
+            android:id="@+id/total_text_image"
+
+            />
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/total_list"
+        android:background="@color/grey"
+        android:divider="@null"
+        android:dividerHeight="7dp"
+        android:padding="15dp"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

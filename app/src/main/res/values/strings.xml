@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Bookkeeper Assistant</string>
+    <string name="editone">Record</string>
+    <string name="month_expense">Expense</string>
+    <string name="month_income">Income</string>
+    <string name="budget">Budget</string>
+    <string name="check_charts">Check Charts</string>
+    <string name="add_note">Add Notes</string>
+    <string name="note">Notes</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="please_input_time">Please Enter the time</string>
+    <string name="set_budget">Set Budget</string>
+    <string name="search_info">Please input the search information</string>
+    <string name="data_empty">No such Data in records</string>
+    <string name="about">About</string>
+    <string name="setting">Setting</string>
+    <string name="history">History</string>
+    <string name="history_record">History Record</string>
+    <string name="delete_all">Delete All</string>
+    <string name="bill_analysis">Bill Analysis</string>
+    <string name="empty_data">Empty Data</string>
+    <string name="chart">Chart</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="Month_Bill">Monthly Bill</string>
+
+
+
+    <string name="details">Details</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
